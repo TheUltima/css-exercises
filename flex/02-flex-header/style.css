@@ -3,7 +3,7 @@
   background: papayawhip;
   display: flex;
   justify-content: space-between;
-  gap: 2px;
+  padding: 5px;
 }
 
 .logo {
@@ -12,24 +12,34 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
-  border: 2px red solid;
   align-self: center;
 }
 
-.left-links ul {
+.right-links,
+.left-links {
   display: flex;
-  align-items: end;
+  flex: auto;
+  align-self: center;
 }
 
 .right-links ul {
   display: flex;
-  justify-self: end;
+  flex: 1 1 auto;
+  justify-content: end;
+  gap: 12px;
+}
+
+.left-links ul {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: start;
+  gap: 12px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
-  border: 2px solid red;
+  padding: 10px 0px;
 }
 
 a {
