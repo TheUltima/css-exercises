@@ -23,7 +23,7 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
+  margin: 8px 0px;
 }
 
 /*Personal Solution Below*/
@@ -43,13 +43,33 @@ input {
 }
 
 .footer {
-  background-color: rgb(236, 236, 236);
+  background-color: #eeeeee;
 }
 
 .content {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
 
+.content .input {
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.buttons {
+  align-self: center;
+}
+
+.buttons button {
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+/*Remove default styles of unordered lists*/
 ul {
   list-style-type: none;
   display: flex;
@@ -58,15 +78,12 @@ ul {
   padding: 0;
 }
 
+/*vv Removes default styles of links vv*/
 a {
   text-decoration: none;
 }
 
 a:link,
 a:visited {
-  color: rgb(46, 46, 46);
-}
-
-.content * {
-  border: 2px solid red;
+  color: #4e4e4e;
 }
